@@ -14,7 +14,10 @@ Comment.init(
     comment_text: {
       type: DataTypes.STRING,
       allowNull: false,
-      len: [1]
+      validate: {
+        // this means the category must be at least one character long
+        len: [4]
+      }
     },
     user_id: {
       type: DataTypes.INTEGER,
