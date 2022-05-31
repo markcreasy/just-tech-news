@@ -4,9 +4,10 @@ const sequelize = require('./config/connection');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const session = require('express-session');
+const helpers = require('./utils/helpers');
 require('dotenv').config();
 
-const hbs = exphbs.create({});
+const hbs = exphbs.create({ helpers });
 const app = express();
 
 // setup port number
