@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "just",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
     "mysql2": "^2.3.3",
     "sequelize": "^6.20.0"
   }
